@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profil</title>
+</head>
+<body>
+    
+    <header>
+        <h1>ENI - MEMORY - Profil</h1>
+        <nav>
+            <ul>
+                <li class="accueil"><a href="index.html">Accueil</a></li>
+                <li class="inscrire"><a href="inscrire.html">S'inscrire</a></li>
+                <li class="se-connecte"><a href="connecter.html" >Se connecter</a></li>
+                <li class="profil"><a href="#">Profil</a></li>
+                <li class="jouer"><a href="jouer.html">Jouer</a></li>
+            </ul>
+        </nav>
+    </header>  
+
+
+    <section class="section4">
+            <div class="container">
+                <div class="title-img">
+                    <h1>Profil</h1>
+                    <img src="ressources/question.svg" >
+                </div>
+                <div class="user-profil">
+                    <div class="nom-user">
+                        <span>Nom d'utilisateur</span>
+                        <p id="js-nom" class="lien"></p>
+                    </div>
+                    <div class="email-user">
+                        <span>Email</span>
+                        <p id="js-email"></p>
+                    </div>
+                </div>
+
+                <div class="memory" id="choix-memory">
+                    <label for="changer-memory">Choix du Memory</label>
+                    <select id="changer-memory">
+                        <option value="alphabet-scrabble/memory_detail_scrabble.png">Alphabet</option>
+                        <option value="animaux/memory_detail_animaux.png">Animaux</option>
+                        <option value="animauxAnimes/memory_detail_animaux_animes.png"">Anime Animaux</option>
+                        <option value="animauxdomestiques/memory_detail_animaux_domestiques.png">Animaux Domesti</option>
+                        <option value="chiens/memory_details_chiens.png">Chiens</option>
+                        <option value="dinosaures/memory_detail_dinosaures.png">Dinosaures</option>
+                        <option value="dinosauresAvecNom/memory_details_dinosaures_avec_nom.png">Dinosaures avec nom</option>
+                        <option value="memory-legume/memory_detail.png">Legume</option>
+                    </select>
+                    <img id="images-chnage"  src="" alt="images" class="image-style">
+                </div>
+                <div class="taill-jeux">
+                    <div class="taill">
+                        <label for="taill-card">taille du Memory </label>
+                        <select id="taill-card">
+                            <option value="">4*3</option>
+                            <option value="">4*4</option>
+                            <option value="">5*4</option>
+                        </select>
+                    </div>
+                    <div class="enrgistre-reset">
+                            <button class="engr" type="submit" id="engesistre" >Enregistrez Option</button>
+                            <button class="reset" id="res">Quitte complet</button>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <script src="profil.js"></script>
+</body>
+</html>

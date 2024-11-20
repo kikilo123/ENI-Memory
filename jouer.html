@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jouer</title>
+</head>
+<body>
+
+    <header>
+        <h1>ENI - MEMORY - Jouer</h1>
+        <nav>
+            <ul>
+                <li class="accueil"><a href="index.html">Accueil</a></li>
+                <li class="inscrire"><a href="inscrire.html">S'inscrire</a></li>
+                <li class="se-connecte"><a href="connecter.html" >Se connecter</a></li>
+                <li class="profil"><a href="profil.html">Profil</a></li>
+                <li class="jouer"><a href="#">Jouer</a></li>
+            </ul>
+        </nav>
+    </header>  
+
+
+    <main>
+        <h2>Derniers meilleures scores :</h2>
+        <br>
+        <table id="tableauScore">
+            <thead id="tHeadScore">
+              <tr>
+                <th>Pseudo</th>
+                <th>Score</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="ligne"><span id="pl1"></span></td>
+                <td class="ligne" id="sc1"></td>
+                <td class="ligne" id="da1"></td>
+              </tr>
+              <!-- <tr>
+                <td class="ligne" id="pl2">Player 2</td>
+                <td class="ligne" id="sc2">Score 2</td>
+                <td class="ligne" id="da2">Date 2</td>
+              </tr>
+              <tr>
+                <td class="ligne" id="pl3">Player 3</td>
+                <td class="ligne" id="sc3">Score 3</td>
+                <td class="ligne" id="da3">Date 3</td>
+              </tr> -->
+            </tbody>
+          </table>
+          <div class="jouerNbCoup">
+            <p class="p1">Tentez de gagner avec le moins d'essais possible.</p>
+            <p>Appuyez sur la <strong>barre d'espace</strong> pour relancer le jeu.</p>
+            <!-- Faire nombre de coup sur JS -->
+            <p id="nbDeCoups">Nombre de coups : 0</p>
+        </div>
+        <table id="tableauJeu">
+            <tr>
+                <td><img id="0" class="flip selected" src="ressources/question.svg"/></td>
+                <td><img id="1" class="flip selected" src= "ressources/question.svg"></td>
+                <td><img id="2" class="flip selected" src= "ressources/question.svg"/></td>
+                <td><img id="3" class="flip selected" src= "ressources/question.svg"/></td>
+            </tr>
+            <tr>
+                <td><img id="4" class="flip selected" src="ressources/question.svg"/></td>
+                <td><img id="5" class="flip selected" src="ressources/question.svg"/></td>
+                <td><img id="6" class="flip selected" src="ressources/question.svg"/></td>
+                <td><img id="7" class="flip selected" src="ressources/question.svg"/></td>
+            </tr>
+            <tr>
+                <td><img id="8" class="flip selected" src="ressources/question.svg"/></td>
+                <td><img id="9" class="flip selected" src="ressources/question.svg"/></td>
+                <td><img id="10" class="flip selected" src="ressources/question.svg"/></td>
+                <td><img id="11" class="flip selected" src="ressources/question.svg"/></td>
+            </tr>
+        </table>
+        <button class="btn-reset" id="reset">Reset</button>
+      </main>
+
+      
+    <script src="jouer.js"></script>
+</body>
+</html>
